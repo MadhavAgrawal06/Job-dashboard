@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Dashboard | By Madhav </title>
+<link rel="stylesheet" href="job.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+
+<nav>
+      <div class="navbar">
+        <div class="logo">
+          <img src="pic/image.jpeg" alt="image">
+          <h1>jobs</h1>
+        </div>
+        <ul>
+          <li><a href="#">
+            <i class="fas fa-user"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+          </li>
+          <li><a href="#">
+            <i class="fas fa-chart-bar"></i>
+            <span class="nav-item">Analytics</span>
+          </a>
+          </li>
+          <li><a href="#">
+            <i class="fas fa-tasks"></i>
+            <span class="nav-item">Jobs Board</span>
+          </a>
+          </li>
+          <li><a href="#">
+            <i class="fab fa-dochub"></i>
+            <span class="nav-item">Documnents</span>
+          </a>
+          </li>
+          <li><a href="#">
+            <i class="fas fa-cog"></i>
+            <span class="nav-item">Setting</span>
+          </a>
+          </li>
+          <li><a href="#">
+            <i class="fas fa-question-circle"></i>
+            <span class="nav-item">Help</span>
+          </a>
+          </li>
+          <li><a href="#" class="logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="nav-item">Logout</span>
+          </a>
+          </li>
+        </ul>
+      </div>
+ </nav>
+
+    <section class="main">
+      <div class="main-top">
+        <p>Explore the universe!</p>
+      </div>
+      <div class="main-body">
+        <h1>Recent Jobs</h1>
+      
+      <div class="search_bar">
+        <input type="search" placeholder="Search job here...">
+        <select name="" id="">
+          <option>Category</option>
+          <option>Web Design</option>
+          <option>App Design</option>
+          <option>App Development</option>
+        </select>
+        <select class="filter">
+          <option>Filter</option>
+        </select>
+      </div>
+
+      <div class="tags_bar">
+        <div class="tag">
+          <i class="fas fa-times"></i>
+          <span>Programming</span>
+        </div>
+        <div class="tag">
+          <i class="fas fa-times"></i>
+          <span>Design</span>
+        </div>
+        <div class="tag">
+          <i class="fas fa-times"></i>
+          <span>PHP</span>
+        </div>
+        <div class="tag">
+          <i class="fas fa-times"></i>
+          <span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <p>There are more than <span>400</span> Jobs</p>
+        <a href="#">See all</a>
+      </div>
+
+      <div class="job_card">
+        <div class="job_details">
+          <div class="img">
+            <i class="fab fa-google-drive"></i>
+          </div>
+          <div class="text">
+            <h2>UX Designer</h2>
+            <span>Google Drive - Junior Post</span>
+          </div>
+        </div>
+        <div class="job_salary">
+          <h4>$6.7 - $12.5k /yr</h4>
+          <span>1 days ago</span>
+        </div>
+      </div>
+      
+      <div class="job_card">
+        <div class="job_details">
+          <div class="img">
+            <i class="fab fa-google"></i>
+          </div>
+          <div class="text">
+            <h2>JavaScript Developer</h2>
+            <span>Google - Senior Post</span>
+          </div>
+        </div>
+        <div class="job_salary">
+          <h4>$8.7 - $13.2k /yr</h4>
+          <span>2 days ago</span>
+        </div>
+      </div>
+
+      <div class="job_card">
+        <div class="job_details">
+          <div class="img">
+            <i class="fab fa-facebook"></i>
+          </div>
+          <div class="text">
+            <h2>Product Developer</h2>
+            <span>Facbook - Manager Post</span>
+          </div>
+        </div>
+        <div class="job_salary">
+          <h4>$11 - $18.5k /yr</h4>
+          <span>2 days ago</span>
+        </div>
+      </div>
+
+      <div class="job_card">
+        <div class="job_details">
+          <div class="img">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <div class="text">
+            <h2>Programmer</h2>
+            <span>Github - Juni Post</span>
+          </div>
+        </div>
+        <div class="job_salary">
+          <h4>$6 - $11.5k /yr</h4>
+          <span>3 days ago</span>
+        </div>
+      </div>
+
+      <div class="job_card">
+        <div class="job_details">
+          <div class="img">
+            <i class="fab fa-youtube"></i>
+          </div>
+          <div class="text">
+            <h2>React.js Expert</h2>
+            <span>Youtube - VIP</span>
+          </div>
+        </div>
+        <div class="job_salary">
+          <h4>$12.5 - $25.5k /yr</h4>
+          <span>4 days ago</span>
+        </div>
+      </div>
+    </div>
+    </section>
+  </div>
+
+</body>
+</html>
